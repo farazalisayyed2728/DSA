@@ -5,21 +5,22 @@ class Solution(object):
             :type target: int
             :rtype: List[int]
             """
+         
 
-            left = numbers[0]
-            right = numbers[-1]
-            i , j = 0
+            left = 0
+            right = len(numbers) -1
+            
 
-            while True:
-                sum = left + right
+            while left < right :
+                sum = numbers[left] + numbers[right]
 
                 if sum > target:
-                    j += 1
-                    right = numbers[-i -j]
+                    right -= 1
+                    
 
-                if sum < target:
-                    i += 1
-                    left = numbers[0 + i]
+                elif sum < target:
+                    left += 1
+                   
 
-                if sum == target:
-                    return [i + 1 ,len(numbers) - j]
+                else:
+                    return [left + 1 , right + 1]
