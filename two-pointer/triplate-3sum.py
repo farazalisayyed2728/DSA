@@ -14,7 +14,7 @@ class Solution(object):
             right = len(nums) -1
 
             while left < right:
-                total = nums[i] + nums[left],nums[right]
+                total = nums[i] + nums[left] + nums[right]
 
                 if total == 0:
                     result.append([nums[i],nums[left],nums[right]])
@@ -34,9 +34,4 @@ class Solution(object):
                 else:
                     right -=1
         return result
-                    
-
                 
-                        
-
-
