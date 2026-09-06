@@ -1,6 +1,6 @@
 class Solution(object):
-    from typing import List
-    def sortedSquares(self, nums:List[int]) -> List [int]:
+
+    def sortedSquares(self, nums):
         """
         :type nums: List[int]
         :rtype: List[int]
@@ -9,22 +9,22 @@ class Solution(object):
         neg = []
         pos = []
        
-       for num in nums:
-        if num < 0:
-            neg.append(num)
-        else:
-            pos.append(num)
+        for num in nums:
+            if num < 0:
+                neg.append(num)
+            else:
+                pos.append(num)
 
 
         #case 1
-        if len(neg) == 0:
-            return [X * X for X in pos]
+            if len(neg) == 0:
+                return[X * X for X in pos]
 
         #case 2
-        if len(pos) == 0:
-            res = [X * X for X in neg]
-            res.reverse()
-            return res
+            if len(pos) == 0:
+                res = [X * X for X in neg]
+                res.reverse()
+                return res
 
         #case 3
         neg = [X * X for X in neg][::-1] #sq , reverse
@@ -38,4 +38,13 @@ class Solution(object):
             if neg[i] <= pos[j]:
                 res.append(neg[i])
                 i += 1
-                
+
+            else:
+                res.append(pos[j])
+                j += 1
+        while i < n :
+                res.append(neg[i])
+                i += 1
+
+        while j < m :
+                res.append(pos[j])
