@@ -1,23 +1,42 @@
 class Solution(object):
     def threeSum(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[List[int]]
-        """
-        siz = len(nums)
-        left = 0
-        right =0
+        nums.sort()
+        
+        result = []
+     
 
-        for i in range(nums):
-            sum = [nums[i]] ,[nums[j]] ,[nums[k]] == 0
+        for i in range(len(nums) - 2):
+ 
+            if i > 0 and nums[i] == nums[i - 1]:
+                continue
 
-            if sum < target:
-                left += 1
+            left = i + 1
+            right = len(nums) -1
 
-                elif sum > target:
-                    right +=1
+            while left < right:
+                total = nums[i] + nums[left],nums[right]
 
-                    else:
+                if total == 0:
+                    result.append([nums[i],nums[left],nums[right]])
+
+                    while left < right and nums[left] == nums[left + 1]:
+                        left +=1
+
+                    while left < right and nums[right] == nums[right -1]:
+                        right -= 1
+
+                    left += 1
+                    right -= 1
+
+                elif total < 0:
+                    left += 1
+
+                else:
+                    right -=1
+        return result
+                    
+
+                
                         
 
 
