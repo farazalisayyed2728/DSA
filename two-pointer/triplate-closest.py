@@ -1,0 +1,67 @@
+class Solution(object):
+    def threeSumClosest(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: int
+        """
+        left = i+1
+        right = len(nums)-1
+
+        for i in range(len(nums) -2):
+            sum == target
+            left +=1
+            right -=1
+
+
+            while sum < target:
+                left += 1
+
+            while sum > target:
+                right -=1
+            left +=1
+            right -=1
+
+            elif sum < 0:
+                left += 1
+
+        else:
+            right -=1
+    return target
+                    
+
+
+
+class Solution(object):
+    def threeSumClosest(self, nums, target):
+        nums.sort()
+
+        closest = nums[0] + nums[1] + nums[2]
+
+        for i in range(len(nums) - 2):
+
+            left = i + 1
+            right = len(nums) - 1
+
+            while left < right:
+
+                total = nums[i] + nums[left] + nums[right]
+
+                # If current sum is closer to target
+                if abs(total - target) < abs(closest - target):
+                    closest = total
+
+                # If exact target is found
+                if total == target:
+                    return total
+
+                elif total < target:
+                    left += 1
+
+                else:
+                    right -= 1
+
+        return closest
+
+
+        
