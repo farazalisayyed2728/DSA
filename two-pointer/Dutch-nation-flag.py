@@ -8,24 +8,20 @@ class Solution(object):
         mid = 0
         high = len(nums) -1
 
-        for i in range(len(nums)):
-            if nums[i] == 0:
-                nums[low] , nums[i] = nums[i] ,nums[low]
+        while mid <= high:
+            if nums[mid] == 0:
+                nums[low] , nums[mid] = nums[mid] ,nums[low]
                 low += 1
-                
-            elif nums[i] == 1:
+                mid += 1
+
+            elif nums[mid] == 1:
                 
                 mid += 1
             
-            elif nums[i] == 2:
-                nums[i] , nums[high] = nums[high] ,nums[i]
+            else:
+                nums[mid] , nums[high] = nums[high] ,nums[mid]
                 high -= 1
                 
-            # elif mid < high:
-            #     nums[3] , nums[4] = nums[4] ,nums[3]
-            #     mid += 1
-
-            while mid < high:
-                nums[3] , nums[4] = nums[4] ,nums[3]
+        
 
         return nums
