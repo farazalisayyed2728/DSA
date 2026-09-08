@@ -26,4 +26,4 @@ class Solution(object):
         if res == float('inf'):
             return 0
 
-        
+        return res
