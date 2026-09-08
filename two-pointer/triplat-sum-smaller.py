@@ -22,3 +22,11 @@ class Solution:
                     right -= 1
                     
         return count
+
+
+
+arr = [-2, 0, 1, 3]
+obj = Solution()
+
+result = obj.countTriplets(2, arr)
+print(result)
