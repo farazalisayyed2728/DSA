@@ -27,3 +27,9 @@ class Solution:
                 res = max(res, arr_len )
                 
         return res
+
+
+s = "aabacbebebe"
+obj = Solution()
+result = obj.longestKSubstr(s, 3)
+print(result)
