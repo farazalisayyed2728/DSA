@@ -25,3 +25,9 @@ class Solution(object):
             res = max(res , fruits_len)
 
         return res
+
+
+fruits = [0,1,2,2,3,3,4,4,5,5]
+obj = Solution()
+result = obj.totalFruit(fruits)
+print(result)
