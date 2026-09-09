@@ -27,3 +27,8 @@ class Solution(object):
             return 0
 
         return res
+
+nums = [2,3,1,2,4,3]
+obj = Solution()
+result = obj.minSubArrayLen(7, nums)
+print(result)
