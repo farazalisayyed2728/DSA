@@ -17,6 +17,9 @@ class Solution(object):
 
             return k
 
-        
+nums = [1,1,2]
+obj = Solution()
+result = obj.removeDuplicates(nums)
+print(result)
             
         
