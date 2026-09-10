@@ -34,4 +34,8 @@ class Solution(object):
                 else:
                     right -=1
         return result
-                
+
+nums = [-1,0,1,2,-1,-4]
+obj = Solution()
+result = obj.threeSum(nums)
+print(result)
