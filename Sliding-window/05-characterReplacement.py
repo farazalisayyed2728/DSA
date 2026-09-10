@@ -32,3 +32,9 @@ class Solution(object):
             res = max(res,len_s)
 
         return res
+
+s = "ABAB"
+obj = Solution()
+result = obj.characterReplacement(s, 2)
+
+print(result)
