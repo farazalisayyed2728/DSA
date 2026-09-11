@@ -50,3 +50,9 @@ class Solution(object):
             res = min(res, high - low)
 
         return s[start:start + res_len]
+
+
+s = "aass"
+solution = Solution()
+result = solution.minWindow(s, "as")
+print(result)
