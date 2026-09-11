@@ -24,3 +24,7 @@ class Solution(object):
 
             elif fast == None:
                 return False
+head = [3,2,0,-4]
+solution = Solution()
+result = solution.hasCycle(head)
+print(result)
