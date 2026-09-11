@@ -29,21 +29,21 @@ class Solution(object):
             if ch in need and window[ch] == need[ch]:
                 have += 1
             
-        while have == need_count:
-            window_size = high - low + 1
-            if window_size < res_len:
-                res_len = window_size
-                start = low
+            while have == need_count:
+                window_size = high - low + 1
+                if window_size < res_len:
+                    res_len = window_size
+                    start = low
 
             
-            left_ch = s[low]
-            window[left_ch] -= 1
+                left_ch = s[low]
+                window[left_ch] -= 1
 
-            if left_ch in need and window[left_ch] < need[left_ch]:
-                have -= 1
+                if left_ch in need and window[left_ch] < need[left_ch]:
+                    have -= 1
 
-            low += 1
-        high +=1
+                low += 1
+            high +=1
             
         if res_len == float('inf'):
             return ""
@@ -52,7 +52,8 @@ class Solution(object):
         return s[start:start + res_len]
 
 
-s = "aass"
+
+s = "ADOBECODEBANC"
 solution = Solution()
-result = solution.minWindow(s, "as")
+result = solution.minWindow(s, "ABC")
 print(result)
