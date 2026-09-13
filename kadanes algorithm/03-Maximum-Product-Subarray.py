@@ -22,3 +22,7 @@ class Solution(object):
             res = max(res,maxend)
             
         return res
+
+nums = [2,3,-2,4]
+solution = Solution()
+print(solution.maxProduct(nums))
