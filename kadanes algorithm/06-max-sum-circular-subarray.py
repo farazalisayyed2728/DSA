@@ -29,3 +29,8 @@ class Solution(object):
         circular_sum = total - min_sum
 
         return max(max_sum, circular_sum)
+
+
+nums = [1, -2, 3, -2]
+solution = Solution()
+print(solution.maxSubarraySumCircular(nums))  # Output: 3
