@@ -25,3 +25,7 @@ class Solution(object):
             res = max(res, onedel)
 
         return res
+
+arr = [1,-2,0,3]
+solution = Solution()
+print(solution.maximumSum(arr))
