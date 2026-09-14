@@ -17,4 +17,6 @@ class Solution(object):
 
             return -1
 
-        
+nums = [1,7,3,6,5,6]
+solution = Solution()
+print(solution.pivotIndex(nums))
