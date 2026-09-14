@@ -23,3 +23,7 @@ class Solution(object):
             f[sum] = f.get(sum, 0) + 1
         return res
 
+nums = [1,1,1]
+k = 2
+solution = Solution()
+print(solution.subarraySum(nums, k))
