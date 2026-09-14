@@ -21,3 +21,7 @@ class Solution(object):
             
             res = max(res, abs(max_end), abs(min_end))
         return res
+
+numms = [1,-3,2,3,-4]
+solution = Solution()
+print(solution.maxAbsoluteSum(numms))
