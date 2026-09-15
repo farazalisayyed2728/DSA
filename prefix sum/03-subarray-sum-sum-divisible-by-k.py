@@ -25,3 +25,9 @@ class Solution(object):
             
 
         return res
+
+
+nums = [4,5,0,-2,-3,1]
+k = 5
+solution = Solution()
+print(solution.subarraysDivByK(nums, k))
