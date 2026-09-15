@@ -25,3 +25,6 @@ class Solution(object):
 
         return res
 
+intervals = [[1,3],[2,6],[8,10],[15,18]]
+solution = Solution()
+print(solution.merge(intervals))
