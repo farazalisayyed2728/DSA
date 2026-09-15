@@ -17,11 +17,11 @@ class Solution(object):
             rem = sum % k
             
             if rem < 0:
-                rem = rum + k
+                rem = sum % k
 
             
             res += f.get(rem, 0)
-            # res += f.get(rem, 0)
+            f[rem] = f.get(rem , 0 ) +1
             
 
         return res
