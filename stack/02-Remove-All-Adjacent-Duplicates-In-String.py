@@ -25,4 +25,7 @@ class Solution(object):
             res += st.pop()
 
         return res[::-1]
-        
+
+s = "abbaca"
+solution = Solution()
+print(solution.removeDuplicates(s))
