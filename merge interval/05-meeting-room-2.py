@@ -22,3 +22,8 @@ class Solution:
                 room -= 1
                 j +=1
         return res
+
+start = [1, 10, 7]
+end = [5, 12, 10]
+solution = Solution()
+print(solution.minMeetingRooms(start, end))  # Output: 2
