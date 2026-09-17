@@ -19,3 +19,7 @@ class Solution:
             end1 = max(end1, end2)
     
         return False
+
+intervals = [[1, 3], [5, 7], [2, 4], [6, 8]]
+solution = Solution()
+print(solution.isIntersect(intervals))  # Output: True
