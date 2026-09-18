@@ -17,3 +17,7 @@ class Solution(object):
 
                 
         return res 
+
+temperatures = [73,74,75,71,69,72,76,73]
+solution = Solution()
+print(solution.dailyTemperatures(temperatures))
