@@ -18,4 +18,6 @@ class Solution(object):
 
         return res
 
-    
+nums = [1,2,1]
+solution = Solution()
+print(solution.nextGreaterElements(nums))
