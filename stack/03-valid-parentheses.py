@@ -51,3 +51,9 @@ class Solution(object):
             return False
 
         return True
+
+
+
+s = "()[]{}"
+solution = Solution()
+print(solution.isValid(s))
