@@ -17,3 +17,7 @@ class Solution(object):
                 return i
 
         return -1
+
+s = "loveleetcode"
+sol = Solution()
+print(sol.firstUniqChar(s))
