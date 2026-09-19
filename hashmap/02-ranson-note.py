@@ -23,3 +23,9 @@ class Solution(object):
                 return False
 
         return True
+
+
+ransomNote = "aa"
+magazine = "aab"
+sol = Solution()
+print(sol.canConstruct(ransomNote, magazine))
