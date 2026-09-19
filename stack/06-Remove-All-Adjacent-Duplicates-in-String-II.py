@@ -35,3 +35,8 @@ class Solution(object):
         res.reverse()
 
         return "".join(res)
+
+s = "deeedbbcccbdaa"
+k = 3
+sol = Solution()
+print(sol.removeDuplicates(s, k))
