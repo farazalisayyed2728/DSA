@@ -31,3 +31,6 @@ class Solution(object):
         return res
 
 
+text = "loonbalxballpoon"
+sol = Solution()
+print(sol.maxNumberOfBalloons(text))
