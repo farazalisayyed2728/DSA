@@ -26,4 +26,8 @@ class Solution(object):
             return res + 1
 
 
-        return res
+        return 
+
+s = "abccccdd"
+sol = Solution()
+print(sol.longestPalindrome(s))
