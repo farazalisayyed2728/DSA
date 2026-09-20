@@ -20,3 +20,7 @@ class Solution(object):
             curr = next
 
         return pre
+
+head = [1,2,3,4,5]
+solution = Solution()
+result = solution.reverseList(head)
