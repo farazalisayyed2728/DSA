@@ -53,4 +53,8 @@ class Solution(object):
 
         return head
 
-        
+head = [1,2,3,4,5]
+left = 2
+right = 4
+solution = Solution()
+result = solution.reverseBetween(head, left, right)
