@@ -20,3 +20,6 @@ class Solution(object):
 
 
 
+arr = [0,2,1,0]
+solution = Solution()
+result = solution.peakIndexInMountainArray(arr)
