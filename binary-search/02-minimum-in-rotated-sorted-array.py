@@ -19,3 +19,6 @@ class Solution(object):
                 
         return nums[low]    # index nahi number retur karna hai isiliye ye likhe 
         
+nums = [3,4,5,1,2]
+solution = Solution()
+print(solution.findMin(nums))  # Output: 1
