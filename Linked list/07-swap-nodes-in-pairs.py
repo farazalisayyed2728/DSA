@@ -51,3 +51,8 @@ class Solution(object):
             left = nextleft
 
         return res
+
+
+head = [1,2,3,4]
+solution = Solution()
+result = solution.swapPairs(head)
