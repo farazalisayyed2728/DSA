@@ -59,4 +59,9 @@ class Solution(object):
             left = nextleft
 
         return res
-        
+
+
+head = [1,2,3,4,5]
+k = 2
+solution = Solution()
+result = solution.reverseKGroup(head, k)
