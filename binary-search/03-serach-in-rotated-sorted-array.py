@@ -32,3 +32,8 @@ class Solution(object):
                     high = mid - 1 
 
         return -1
+
+
+nums = [4,5,6,7,0,1,2]
+solution = Solution()
+print(solution.search(nums, 0))  # Output: 4
