@@ -30,3 +30,8 @@ class Solution(object):
                 high = guess - 1
 
         return res
+
+piles = [3,6,7,11]
+h = 8
+solution = Solution()
+print(solution.minEatingSpeed(piles, h))  # Output: 4
