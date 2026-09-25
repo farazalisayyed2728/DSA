@@ -35,4 +35,8 @@ class Solution:
                 high = guess - 1
                 
         return res
-        
+
+arr= [1, 2, 4, 8, 9]
+k = 3
+solution = Solution()
+print(solution.aggressiveCows(arr, k))  # Output: 3
