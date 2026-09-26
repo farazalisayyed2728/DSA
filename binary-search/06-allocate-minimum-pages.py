@@ -46,4 +46,7 @@ class Solution:
         return res
                 
             
-        
+arr= [12, 34, 67, 90]
+k = 2
+solution = Solution()
+print(solution.findPages(arr, k))  
