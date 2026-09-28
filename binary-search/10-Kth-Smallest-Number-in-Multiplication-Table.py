@@ -32,4 +32,11 @@ class Solution(object):
                 high = guess - 1
 
         return res
-        
+
+
+
+m = 3
+n = 3
+k = 5
+solution = Solution()
+print(solution.findKthNumber(m,n,k))
