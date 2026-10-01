@@ -25,4 +25,9 @@ class Solution(object):
             ans.append(point)
 
         return ans
-        
+
+
+points = [[3,3],[5,-1],[-2,4]]
+k = 2
+solution = Solution()
+print(solution.kClosest(points, k))
