@@ -35,3 +35,9 @@ class Solution(object):
             res.append(element)
             
         return res
+
+
+nums = [1,1,1,2,2,3]
+k = 2
+solution = Solution()
+print(solution.topKFrequent(nums, k))
