@@ -34,3 +34,8 @@ class Solution(object):
 
         return w
 
+profits = [1,2,3]
+capital = [0,1,1]
+k = 2
+solution = Solution()
+print(solution.findMaximizedCapital(k, 0, profits, capital))
