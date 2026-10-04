@@ -42,3 +42,7 @@ class Solution(object):
                 seat = min(free[task] for _, task in pq)
         return seat - 1
 
+tasks = ["A","A","A","B","B","B"]
+n = 2
+solution = Solution()
+print(solution.leastInterval(tasks, n))  # Output: 8
