@@ -53,3 +53,9 @@ class Solution(object):
                 prev_char = char
 
         return "".join(result)
+
+
+s = "aab"
+solution = Solution()
+print(solution.reorganizeString(s))
+

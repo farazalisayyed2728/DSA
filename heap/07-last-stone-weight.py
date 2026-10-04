@@ -24,3 +24,6 @@ class Solution(object):
             return -h[0]
 
         return 0
+stones = [2,7,4,1,8,1]
+solution = Solution()
+print(solution.lastStoneWeight(stones))
