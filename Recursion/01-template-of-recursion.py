@@ -6,3 +6,5 @@ def fun(n):
 ans = fun(5)
 
 print(ans) 
+
+print(fun(0))  # Output: 1
