@@ -15,3 +15,8 @@ class Solution:
         check(0)
 
         return ''.join(ans)
+
+s = "geeksforgeeks"
+c = 'e'
+sol = Solution()
+print(sol.removeCharacter(s, c))  # Output: gksforgks
