@@ -1,17 +1,20 @@
 class Solution:
     def isPalindrome(self, s):
-        # code here
-        left =  0
-        right = len(s) - 1
-        
-        while left < right :
-            if s[left] != s[right]:
+
+        def check(low, high):
+
+            # Base case
+            if low >= high:
+                return True
+
+            # Characters are different
+            if s[low] != s[high]:
                 return False
-                
-            left += 1
-            right -= 1
-            
-        return True
+
+            # Check remaining string
+            return check(low + 1, high - 1)
+
+        return check(0, len(s) - 1)
         
 s = "abba"
 solution = Solution()
