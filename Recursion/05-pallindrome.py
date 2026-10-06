@@ -13,3 +13,6 @@ class Solution:
             
         return True
         
+s = "abba"
+solution = Solution()
+print(solution.isPalindrome(s))
