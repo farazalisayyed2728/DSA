@@ -13,3 +13,8 @@ class Solution:
             return check(i + 1)
 
         return check(0)
+
+
+arr = [10, 20, 30, 40, 50]
+sol = Solution()
+print(sol.isSorted(arr))  # Output: True
