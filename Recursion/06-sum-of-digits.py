@@ -11,3 +11,8 @@ class Solution:
         ans = self.sumOfDigits(n)
         
         return d + ans  
+
+
+n = 678
+sol = Solution()
+print(sol.sumOfDigits(n))
