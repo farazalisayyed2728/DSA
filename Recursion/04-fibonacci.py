@@ -11,7 +11,7 @@ class Solution(object):
         return ans1 + ans2
 
 
-n = 2
+n = 3
 solution = Solution()
 print(solution.fib(n))
         
