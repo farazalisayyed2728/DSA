@@ -9,4 +9,9 @@ class Solution(object):
         ans2 = self.fib(n - 2)
 
         return ans1 + ans2
+
+
+n = 2
+solution = Solution()
+print(solution.fib(n))
         
