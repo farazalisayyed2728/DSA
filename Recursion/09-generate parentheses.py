@@ -26,3 +26,8 @@ class Solution(object):
         fun(0, 0, []) 
 
         return res
+
+
+n = 3
+sol = Solution()
+print(sol.generateParenthesis(n))  # Output: ["((()))","(()())","(())()","()(())","()()()"]
