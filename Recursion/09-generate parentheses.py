@@ -30,4 +30,5 @@ class Solution(object):
 
 n = 3
 sol = Solution()
-print(sol.generateParenthesis(n))  # Output: ["((()))","(()())","(())()","()(())","()()()"]
+print(sol.generateParenthesis(n)) 
+

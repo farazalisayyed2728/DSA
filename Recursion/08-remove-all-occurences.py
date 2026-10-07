@@ -19,4 +19,5 @@ class Solution:
 s = "geeksforgeeks"
 c = 'e'
 sol = Solution()
-print(sol.removeCharacter(s, c))  # Output: gksforgks
+print(sol.removeCharacter(s, c))
+
