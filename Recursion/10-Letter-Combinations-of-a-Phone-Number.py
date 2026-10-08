@@ -39,3 +39,6 @@ class Solution(object):
 
         return res
 
+digits = "23"
+solution = Solution()
+print(solution.letterCombinations(digits))
