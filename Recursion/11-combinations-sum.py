@@ -29,3 +29,7 @@ class Solution(object):
 
         return res
             
+candidates = [2,3,6,7]
+target = 7
+solution = Solution()
+print(solution.combinationSum(candidates, target))
