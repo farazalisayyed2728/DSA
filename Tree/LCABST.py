@@ -30,4 +30,8 @@ class Solution(object):
         else:
             return root
         
-        
+root = [6,2,8,0,4,7,9,None,None,3,5]
+p = 2
+q = 8
+solution = Solution()
+result = solution.lowestCommonAncestor(root, p, q)
