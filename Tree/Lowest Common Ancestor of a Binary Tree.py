@@ -24,3 +24,10 @@ class Solution(object):
         
         dfs(root)
         return self.res
+
+
+root = [3,5,1,6,2,0,8,None,None,7,4]
+p = 5
+q = 1
+solution = Solution()
+result = solution.lowestCommonAncestor(root, p, q)
