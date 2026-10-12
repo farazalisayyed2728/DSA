@@ -4,6 +4,9 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
+from unittest import result
+
+
 class Solution(object):
     def searchBST(self, root, val):
         """
@@ -24,3 +27,7 @@ class Solution(object):
             return self.searchBST(root.right , val)
 
 
+root = [4,2,7,1,3]
+val = 2
+solution = Solution()
+print = solution.searchBST(root, val)
