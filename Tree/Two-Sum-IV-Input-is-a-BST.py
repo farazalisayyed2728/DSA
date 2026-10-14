@@ -57,3 +57,9 @@ class Solution(object):
                 big = self.getbig(dsc)
 
         return False
+
+
+root = [5,3,6,2,4,None,7]
+k = 9
+solution = Solution
+print(solution.findTarget(solution, root, k)) 
