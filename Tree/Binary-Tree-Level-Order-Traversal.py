@@ -43,4 +43,7 @@ class Solution(object):
 
 
         
-        
+root = [3, 9, 20, None, None, 15, 7]
+solution = Solution()
+root = solution.list_to_tree(root)
+print(solution.levelOrder(root))
