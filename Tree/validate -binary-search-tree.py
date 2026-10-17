@@ -21,4 +21,6 @@ class Solution(object):
         return ino(root)
 
 
-            
+root = [2, 1, 3]
+s = Solution()
+print(s.isValidBST(root))
