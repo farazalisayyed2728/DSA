@@ -30,3 +30,7 @@ class Solution(object):
         first[0].val, second[0].val = (
             second[0].val, first[0].val
         )
+
+root = [3, 1, 4, None, None, 2]
+s = Solution()
+print(s.recoverTree(root))
