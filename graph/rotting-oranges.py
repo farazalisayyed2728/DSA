@@ -49,3 +49,7 @@ class Solution(object):
             return -1
 
         return time 
+
+grid = [[2,1,1],[1,1,0],[0,1,1]]
+s = Solution()
+print(s.orangesRotting(grid))
