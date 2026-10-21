@@ -27,3 +27,9 @@ class Solution:
                     return True
 
         return False
+
+
+edges = [[0, 1], [1, 2], [2, 0]]
+V = 3
+s = Solution()
+print(s.isCycle(V, edges))  # Output: True
