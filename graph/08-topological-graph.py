@@ -30,3 +30,7 @@ class Solution:
                     q.append(neigh)
         return res
             
+
+egdes =  [[3, 0], [1, 0], [2, 0]]
+solution = Solution()
+print(solution.topoSort(4, egdes))
