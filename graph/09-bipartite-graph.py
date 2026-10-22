@@ -23,3 +23,7 @@ class Solution(object):
                     return False
 
         return True
+
+graph = [[1,3],[0,2],[1,3],[0,2]]
+solution = Solution()
+print(solution.isBipartite(graph))
