@@ -1,5 +1,7 @@
 from collections import deque
 
+from django.db.migrations import graph
+
 class Solution:
     def shortestPath(self, V, edges, src, dest):
         a = [[] for _ in range(V)]
@@ -31,3 +33,10 @@ class Solution:
                     q.append((neigh, dis + 1))
 
         return -1
+
+edges = [[0, 1], [0, 2], [1, 2], [1, 3], [2, 3], [3, 4]]
+V = 5
+src = 0
+dest = 8
+solution = Solution()
+print(solution.shortestPath(V, edges, src, dest))
