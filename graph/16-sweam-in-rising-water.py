@@ -36,3 +36,7 @@ class Solution(object):
                     heapq.heappush(pq, (newwt, (r, c)))
 
         return -1
+
+grid = [[0,2], [1,3]]
+solution = Solution()
+print(solution.swimInWater(grid))
