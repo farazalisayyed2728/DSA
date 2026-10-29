@@ -18,3 +18,6 @@ class Solution(object):
 
         return res[dst]   if res[dst] != INF else -1
 
+flights = [[0,1,100],[1,2,100],[2,0,100],[1,3,600],[2,3,200]]
+solution = Solution()
+print(solution.findCheapestPrice(4, flights, 0, 3, 1))
