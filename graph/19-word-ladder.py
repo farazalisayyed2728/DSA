@@ -36,7 +36,9 @@ class Solution(object):
 
         return 0
 
-beginWord = "hit", endWord = "cog", wordList = ["hot","dot","dog","lot","log","cog"]
+beginWord = "hit"
+endWord = "cog"
+wordList = ["hot", "dot", "dog", "lot", "log", "cog"]
 
 solution = Solution()
-print(solution.ladderLength(wordList))
+print(solution.ladderLength(beginWord, endWord, wordList))
