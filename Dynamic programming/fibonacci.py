@@ -17,3 +17,8 @@ class Solution(object):
             return dp[n]
             
         return solve(n)
+
+
+n = 2
+solution = Solution()
+print(solution.fib(n))
