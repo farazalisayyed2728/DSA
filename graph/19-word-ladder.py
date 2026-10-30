@@ -35,3 +35,8 @@ class Solution(object):
                         f.remove(new_word)
 
         return 0
+
+beginWord = "hit", endWord = "cog", wordList = ["hot","dot","dog","lot","log","cog"]
+
+solution = Solution()
+print(solution.ladderLength(wordList))
