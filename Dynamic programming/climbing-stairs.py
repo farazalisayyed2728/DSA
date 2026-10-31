@@ -1,30 +1,28 @@
 class Solution(object):
-    def rob(self, nums):
+    def climbStairs(self, n):
+        dp = {}
 
-        n = len(nums)
-        dp = [[-1] * 2 for _ in range(n)]
-
-        def fun(nums, n, i, free):
-
+        def solve(i):
             if i == n:
+                return 1
+
+            if i > n :
                 return 0
 
-            if dp[i][free] != -1:
-                return dp[i][free]
+            if i in dp :
+                return dp[i]
 
-            if free == 0:
-                dp[i][free] = fun(nums, n, i + 1, 1)
-                return dp[i][free]
+            a1 = solve(i + 1 )
+            a2 = solve(i + 2 )
 
-            c1 = nums[i] + fun(nums, n, i + 1, 0)
-            c2 = fun(nums, n, i + 1, 1)
+            dp[i] = a1 + a2
 
-            dp[i][free] = max(c1, c2)
 
-            return dp[i][free]
+            return dp[i]
+        
+        return solve(0)
 
-        return fun(nums, n, 0, 1)
-
-nums =  [1,2,3,1]
+        
+n = 2
 solution = Solution()
-print(solution.rob(nums))
+print(solution.climbStairs(n))
