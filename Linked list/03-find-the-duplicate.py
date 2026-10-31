@@ -20,4 +20,8 @@ class Solution(object):
                     fast = nums[fast]
                 return fast
 
-        return 0
+
+
+nums = [1, 2, 3, 1]
+solution = Solution()
+print(solution.findDuplicate(nums))

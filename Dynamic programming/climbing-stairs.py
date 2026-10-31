@@ -24,3 +24,7 @@ class Solution(object):
             return dp[i][free]
 
         return fun(nums, n, 0, 1)
+
+nums =  [1,2,3,1]
+solution = Solution()
+print(solution.nums())
