@@ -29,3 +29,9 @@ class Solution:
             return dp[i][cap]
             
         return fun(0 , W)
+
+val = [1, 2, 3]
+wt = [4, 5, 1]
+W = 4
+solution = Solution()
+print(solution.knapsack(W ,val , wt))
