@@ -23,3 +23,7 @@ class Solution:
                     
         return dp[0][sum]
             
+arr = [3, 34, 4, 12, 5, 2]
+sum = 9
+solution = Solution()
+print(solution.isSubsetSum(arr , sum)) 
