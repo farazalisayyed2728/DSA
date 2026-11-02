@@ -19,3 +19,9 @@ class Solution:
                     dp[i][cap] = max(yes, no)
 
         return dp[0][W]
+
+val = [1, 2, 3]
+wt = [4, 5, 1]
+W = 4
+solution = Solution()
+print(solution.knapsack(W ,val , wt))
