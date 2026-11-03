@@ -27,4 +27,8 @@ class Solution(object):
                     dp[i][t] = c1 or c2
                     
         return dp[0][target]
-        
+
+
+nums = [1,5,11,5]
+solution = Solution()
+print(solution.canPartition(nums))
