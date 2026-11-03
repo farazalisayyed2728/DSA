@@ -32,3 +32,9 @@ class Solution(object):
                     dp[i][t] = c1 + c2
 
         return dp[0][s]
+
+
+nums =  [1,1,1,1,1]
+target = 3
+solution = Solution()
+print(solution.findTargetSumWays(nums , target))
