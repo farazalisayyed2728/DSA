@@ -11,3 +11,7 @@ class Solution(object):
 
         return dp[0][0]
 
+m = 3
+n = 7
+solution = Solution()
+print(solution.uniquePaths(m , n))
