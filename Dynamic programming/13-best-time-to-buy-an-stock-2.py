@@ -25,4 +25,8 @@ class Solution(object):
             return dp[i][buy]
 
         return fun(0, 1)
-        
+
+
+prices = [7 ,1,5,3,6,4]
+solution = Solution()
+print(solution.maxProfit(prices))
