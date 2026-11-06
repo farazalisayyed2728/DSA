@@ -9,3 +9,6 @@ class Solution(object):
 
         return res
 
+n = 11
+solution = Solution()
+print(solution.hammingWeight(n))
