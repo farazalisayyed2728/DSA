@@ -18,3 +18,8 @@ class Solution(object):
                 j += 1
 
         return res
+
+g = [1, 2, 3]
+s = [1, 1]
+solution = Solution()
+print(solution.findContentChildren(g, s))
