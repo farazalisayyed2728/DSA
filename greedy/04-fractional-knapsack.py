@@ -25,3 +25,9 @@ class Solution:
                 break
 
         return res
+
+val = [60, 100, 120]
+wt = [10, 20, 30]
+capacity = 50
+solution = Solution()
+print(solution.fractionalKnapsack(val, wt, capacity))
