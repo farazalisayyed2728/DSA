@@ -12,4 +12,7 @@ class Solution(object):
                 return True 
 
         return True 
-    
+
+nums = [2,3,1,1,4]
+solution = Solution()
+print(solution.canJump(nums))
