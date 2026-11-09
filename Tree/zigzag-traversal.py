@@ -51,3 +51,7 @@ class Solution(object):
             left_to_right = 1 - left_to_right
 
         return res
+
+root = [3,9,20,None,None,15,7]
+solution = Solution()
+print(solution.zigzagLevelOrder(root))
