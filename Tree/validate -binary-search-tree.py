@@ -1,3 +1,10 @@
+class TreeNode(object):
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+
 class Solution(object):
     def isValidBST(self, root):
         prev = [None]
@@ -10,10 +17,9 @@ class Solution(object):
             if not ino(node.left):
                 return False
 
-            
             if prev[0] is not None and node.val <= prev[0]:
                 return False
-            
+
             prev[0] = node.val
 
             return ino(node.right)
@@ -21,6 +27,10 @@ class Solution(object):
         return ino(root)
 
 
-root = [2, 1, 3]
+# Construct Binary Tree
+root = TreeNode(2)
+root.left = TreeNode(1)
+root.right = TreeNode(3)
+
 s = Solution()
 print(s.isValidBST(root))
