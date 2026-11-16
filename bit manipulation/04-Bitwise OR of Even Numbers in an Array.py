@@ -7,3 +7,7 @@ class Solution(object):
                 res |= num
 
         return res
+
+nums = [1,2,3,4,5,6]
+s = Solution()
+print(s.evenNumberBitwiseORs(nums))
